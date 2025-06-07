@@ -261,41 +261,58 @@
 
  <!-- kontak -->
 <section id="Contac" class="pt-36 pb-32">
-    <div class="container">
-        <div class="w-full px-4">
-            <div class="max-w-xl mx-auto text-center mb-16">
-                <h4 class="font-semibold text-lg text-priamary mb-2">Kontak</h4>
-                <h2 class="font-bold text-dark text-3xl mb-4 lg:text-5xl">Hubungi saya</h2>
-                <p class="font-medium text-md text-hitam md:text-lg">kritik serta saran akan membantu saya dalam pengembangan web ini, jika ada pertanyaan silahkan hubungi saya di bawah ini! </p>
-            </div>  
-        </div>
-        <form action="https://formsubmit.co/elgilistian@gmail.com" method="POST">
-    <div class="w-full lg:w-2/3 lg:mx-auto">
-        <div class="w-full mb-8 px-4">
-            <label for="Name" class="text-bese font-bold text-priamary">
-                Name
-                <input type="text" id="Name" class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-priamary focus:ring-1 focus:border-priamary">
-            </label>
-        </div>
-        <div class="w-full mb-8 px-4">
-            <label for="email" class="text-bese font-bold text-priamary">
-                Email
-                <input type="text" id="email" class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-priamary focus:ring-1 focus:border-priamary">
-            </label>
-        </div>
-        <div class="w-full mb-8 px-4">
-            <label for="pesam" class="text-bese font-bold text-priamary">
-                Messege
-                <textarea type="text" id="email" class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-priamary focus:ring-1 focus:border-priamary h-32"></textarea>
-            </label>
-        </div>
-        <div class="w-full px-4">
-            <button class="text-bese font-semibold text-white bg-priamary py-3 px-8 rounded-full w-full hover:opacity-60 hover:shadow-lg transition duration-500 ">Kirim</button>
-        </div>
+  <div class="container">
+    <div class="w-full px-4">
+      <div class="max-w-xl mx-auto text-center mb-16">
+        <h4 class="font-semibold text-lg text-priamary mb-2">Kontak</h4>
+        <h2 class="font-bold text-dark text-3xl mb-4 lg:text-5xl">Hubungi saya</h2>
+        <p class="font-medium text-md text-hitam md:text-lg">
+          kritik serta saran akan membantu saya dalam pengembangan web ini, jika ada pertanyaan silahkan hubungi saya di bawah ini!
+        </p>
+      </div>
     </div>
-        </form>
-    </div>
+
+    <form action="https://formsubmit.co/elgilistian@gmail.com" method="POST">
+      <div class="w-full lg:w-2/3 lg:mx-auto">
+        <div class="w-full mb-8 px-4">
+          <label for="Name" class="text-bese font-bold text-priamary">
+            Name
+            <input type="text" name="nama" id="Name" required
+              class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-priamary focus:ring-1 focus:border-priamary">
+          </label>
+        </div>
+        <div class="w-full mb-8 px-4">
+          <label for="email" class="text-bese font-bold text-priamary">
+            Email
+            <input type="email" name="email" id="email" required
+              class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-priamary focus:ring-1 focus:border-priamary">
+          </label>
+        </div>
+        <div class="w-full mb-8 px-4">
+          <label for="pesan" class="text-bese font-bold text-priamary">
+            Message
+            <textarea name="pesan" id="pesan" required
+              class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-priamary focus:ring-1 focus:border-priamary h-32"></textarea>
+          </label>
+        </div>
+
+        <!-- Hidden field untuk konfigurasi Formsubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Pesan Baru dari Form Kontak">
+        <input type="hidden" name="_next" value="https://yourdomain.com/terima-kasih.html">
+        <input type="text" name="_honey" style="display:none">
+
+        <div class="w-full px-4">
+          <button type="submit"
+            class="text-bese font-semibold text-white bg-priamary py-3 px-8 rounded-full w-full hover:opacity-60 hover:shadow-lg transition duration-500">
+            Kirim
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
 </section>
+
   <!-- kontac end -->
 <footer class="bg-hitam pt-24 pb-12">
     <div class="container">
